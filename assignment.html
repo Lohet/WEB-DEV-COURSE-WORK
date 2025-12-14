@@ -1,0 +1,94 @@
+<!doctype html>
+    <head>
+        <meta charset="UTF-8">
+        <meta width="device-width" imagescale="1.0">
+        <title>About me</title>
+    </head>
+    <header>
+        <h1>Personal Website</h1>
+        <nav>
+            <a href="#section1">Biography </a>
+            <a href="#section2">Qualifications </a>
+            <a href="#section3">Hobbies </a>
+            <a href="#section4">Coding </a>
+        </nav>
+        <br>
+    </header>
+    <body>
+        <img src="87.jpg" alt="LSR">
+        <section id="section1">
+            <h4>BIOGRAPHY</h4>
+            <p>
+                I am Lohet.S.Ratnakar.<br>
+                I am a second-year Computer Science student at VIT Chennai, specializing in <strong>Artificial Intelligence and Machine Learning</strong>.
+                With a strong foundation in <em>Python, C, and C++</em>, I am passionate about expanding my skills in <span>Machine Learning and Web Development</span>.
+            </p>
+        </section>
+        <section id="section2">
+            <h4>Qualifications</h4>
+            <ul>
+                <li>Btech Cse-Aiml      CGPA:8.34 (till sem2)<br></li>
+                <li>Class 12th CBSE     88.2%<br></li>
+                <li>Class 10th CBSE     92<br></li>
+            </ul>
+        </section>
+        <section id="section3">
+            <h4>Hobbies</h4>
+            <ol>
+                <li>Listening to Music<br></li>
+                <li>Watching Cricket, Formula 1<br></li>
+                <li>Watchin Hollywood Movies<br></li>
+            </ol>
+        </section>
+        <section id="section4">
+            <h4>Coding part</h4>
+            <p>
+                My favourite coding language is C.
+                I like this Fibanocci series problem.
+            </p>
+            <pre>
+            <code>
+                #include &lt;stdio.h&gt;
+                void printFib(int n) {
+                    if (n < 1) {
+                        printf("Invalid Number of terms\n");
+                        return;
+                    }
+                
+                    int prev1 = 1;
+                    int prev2 = 0;
+
+                    for (int i = 1; i <= n; i++) {
+                        
+                        if (i > 2) {
+                            int curr = prev1 + prev2;
+                            prev2 = prev1;
+                            prev1 = curr;
+                            printf("%d ", curr);
+                        }
+                        else if (i == 1)
+                            printf("%d ", prev2);
+                        else if (i == 2)
+                            printf("%d ", prev1);
+                    }
+                }
+
+                int main() {
+                    int n = 9;
+                    printFib(n);
+                    return 0;
+                }
+            </code></pre>
+            <ol>
+                <li>We can use one of the C loops to iterate and print the given number of terms. </li>
+                <li>The first two terms, F1 and F2 should be handled separately. </li>
+                <li>After that, we can use two variables to store the previous two terms and print the current term by adding these two. </li>
+                <li>We have to keep updating the previous terms as we move to print the next term in the series.</li>
+            </ol>
+        </section>
+    </body>
+    <footer>
+        <img src="C:\Users\hp\Downloads\the-end-azh7ml.jpg"></img>
+        <p>HTML DEMO WEBSITE COMPLETED.</p>
+    </footer>
+</html>
